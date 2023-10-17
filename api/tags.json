@@ -1,1 +1,1 @@
-[{"name":"blog","path":"api/tags/blog.json","slug":"blog","count":2},{"name":"Linux | Cmake","path":"api/tags/Linux-Cmake.json","slug":"Linux-Cmake","count":1},{"name":"RTOS | STM32","path":"api/tags/RTOS-STM32.json","slug":"RTOS-STM32","count":1}]
+[{"name":"blog","path":"api/tags/blog.json","slug":"blog","count":2},{"name":"Linux | Cmake","path":"api/tags/Linux-Cmake.json","slug":"Linux-Cmake","count":1},{"name":"RTOS","path":"api/tags/RTOS.json","slug":"RTOS","count":1},{"name":"STM32","path":"api/tags/STM32.json","slug":"STM32","count":1}]
