@@ -1,0 +1,6 @@
+#aplayer {
+    /*position: fixed; /* 或者 'fixed' */
+    /* right: 0px; /* 距离左边的距离 */
+    /* bottom: 0px; *//* 距离底部的距离 */ 
+    z-index: 9999; /* 设置一个较大的值 */
+}

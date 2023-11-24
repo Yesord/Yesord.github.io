@@ -1,0 +1,23 @@
+# 在记事本中逐个记录，方便替换，以下为我的示例
+[Blogroot]：D:\MyBlog
+
+[SourceRepo]：git@github.com: Yesord/hexo-auarora-src .git
+
+[SiteBlogRepo]
+  [GithubBlogRepo]：yesord.github.io
+  [GiteeBlogRepo]：anzhiyu
+  [CodingBlogRepo]：anzhiyu/anzhiyu
+
+[SiteUsername]
+  [GithubUsername]：yesord
+  [GiteeUsername]：anzhiyu
+  [CodingUsername]：anzhiyu
+
+[SiteToken]
+  [GithubToken]：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
+  [GiteeToken]：f57acasdadgar4578603adas5d8w79bb
+  [CodingToken]：a4e45daf78as1f2670dcbbcfd5as7d8asd8cd66a77
+
+[GithubEmail]：2691004662@qq.com
+
+[TokenUser]：RAxDiobbRi
