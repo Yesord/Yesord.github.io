@@ -20,6 +20,7 @@
 			$element = document.createElement("div");
 			$element.style.position = "absolute";
 			$element.style.opacity = opacity;
+            $element.style.zIndex = 9999; //设置显示优先级
 			//$element.style.outline = "10px solid red";
 			$element.style.pointerEvents = "none";
 			$element.style.background = "-webkit-radial-gradient(" + colour + " 64%, rgba(0,0,0,0) 65%) no-repeat";
