@@ -1,4 +1,4 @@
-!function () {
+!function () { // 蜘蛛网粒子特效
     function n(n, e, t) {
         return n.getAttribute(e) || t
     }
