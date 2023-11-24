@@ -15,4 +15,4 @@
             <script type="text/javascript" src="/dist/music.js"></script> <!-- APlayer配置 -->
             <script type="text/javascript" src="/static/js/ripple.js"></script> <!-- 点击水波纹 -->
             <noscript><strong>We're sorry but this app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
-            <div id="app"></div><!-- hexo injector body_end start --><script src="https://fastly.jsdelivr.net/gh/Yesord/live2d-widget@latest/autoload.js"></script><!-- hexo injector body_end end --></body></script></html> 
+            <div id="app"></div><!-- hexo injector body_end start --><script src="https://purge.jsdelivr.net/gh/Yesord/live2d-widget@latest/autoload.js"></script><!-- hexo injector body_end end --></body></script></html> 
