@@ -1,4 +1,4 @@
-import ColorThief from "./color-thief.js";
+
 
 const ap = new APlayer({
     container: document.getElementById('aplayer'), // 容器元素
@@ -42,7 +42,7 @@ const ap = new APlayer({
         {
             name: '残酷な天使のテーゼ',
             artist: '高橋洋子',
-            url: '/dist/Music/残酷な天使のテーゼ.mp3',
+            url: '/dist/Music/残酷天使的行动纲领.mp3',
             cover: '/dist/Cover/高橋洋子 - 残酷な天使のテーゼ.jpg',
             theme: '#FF0000' ,//切换到此音频时的主题色，比上面的 theme 优先级高
             lrc: '/dist/lrc/translation/高橋洋子 - 残酷な天使のテーゼ.lrc',
@@ -54,14 +54,6 @@ const ap = new APlayer({
             cover: '/dist/Cover/ずっと真夜中でいいのに。 - 消えてしまいそうです .jpg',
             theme: '#FF0000' ,//切换到此音频时的主题色，比上面的 theme 优先级高
             lrc: '/dist/lrc/translation/ずっと真夜中でいいのに。 - 消えてしまいそうです .lrc',
-        },
-        {
-            name: '打上花火',
-            artist: '米津玄師,DAOKO',
-            url: 'DAOKO (ダヲコ) _ 米津玄師 (よねづ けんし) - 打上花火.flac',
-            cover: '/dist/Cover/RADWIMPS,十明 - すずめ feat.十明.jpg',
-            theme: '#FF0000' ,//切换到此音频时的主题色，比上面的 theme 优先级高
-            lrc: '',
         },
         {
             name: '丑八怪',
@@ -111,32 +103,17 @@ const ap = new APlayer({
             theme: '#FF0000' ,//切换到此音频时的主题色，比上面的 theme 优先级高
             lrc: '',
         },
+        /*{
+            name: '打上花火',
+            artist: '米津玄師,DAOKO',
+            url: 'DAOKO (ダヲコ) _ 米津玄師 (よねづ けんし) - 打上花火.flac',
+            cover: '/dist/Cover/RADWIMPS,十明 - すずめ feat.十明.jpg',
+            theme: '#FF0000' ,//切换到此音频时的主题色，比上面的 theme 优先级高
+            lrc: '',
+        },*/ 
         
     ]
 });
 
 
 
-const colorThief = new ColorThief();
-const image = new Image();
-const xhr = new XMLHttpRequest();
-const setTheme = (index) => {
-    if (!ap.list.audios[index].theme) {
-        xhr.onload = function(){
-            let coverUrl = URL.createObjectURL(this.response);
-            image.onload = function(){
-                let color = colorThief.getColor(image);
-                ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
-                URL.revokeObjectURL(coverUrl)
-            };
-            image.src = coverUrl;
-        }
-        xhr.open('GET', ap.list.audios[index].cover, true);
-        xhr.responseType = 'blob';
-        xhr.send();
-    }
-};
-setTheme(ap.list.index);
-ap.on('listswitch', (index) => {
-    setTheme(index);
-});
