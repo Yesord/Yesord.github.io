@@ -1,7 +1,7 @@
 const ap = new APlayer({
     container: document.getElementById('aplayer'), // 容器元素
     mini: false, // mini模式 
-    fixed: false, // 吸底模式
+    fixed: true, // 吸底模式
     autoplay: false, // 自动播放
     theme: '#FADFA3', // 主题色
     loop: 'all', // 音频循环播放, 可选值: 'all', 'one', 'none'
