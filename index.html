@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="/static/css/mouse.css">
         <body id="body-container">
             <link rel="stylesheet" href="/dist/APlayer.min.css"> <!-- APlayer的css -->
+            <script src="/dist/color-thief.js"></script>
             <div id="aplayer"></div> <!-- APlayer容器使用 -->
             <script async src="/static/js/mouse.js"></script> <!-- 蜘蛛网显示 -->
             <script type="text/javascript" src="/dist/APlayer.min.js"></script> <!-- APlayer -->
