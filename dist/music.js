@@ -1,3 +1,5 @@
+import ColorThief from "./color-thief.js";
+
 const ap = new APlayer({
     container: document.getElementById('aplayer'), // 容器元素
     mini: false, // mini模式 
@@ -35,7 +37,7 @@ const ap = new APlayer({
             url: '/dist/Music/悪魔の子.mp3',
             cover: '/dist/Cover/ヒグチアイ - 悪魔の子.jpg',
             theme: '#FF0000' ,//切换到此音频时的主题色，比上面的 theme 优先级高
-            lrc: '/dist/lrc/translation/ヒグチアイ - 悪魔の子.lrc',
+            lrc: '/dist/lrc/translation/ヒグチアイ - 悪魔の子 .lrc',
         },
         {
             name: '残酷な天使のテーゼ',

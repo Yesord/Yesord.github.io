@@ -5,6 +5,10 @@
     z-index: 9999; /* 设置一个较大的值 */
 }
 
-.aplayer .aplayer-icon {
+.aplayer.aplayer-fixed .aplayer-body .aplayer-icon {
     display: inline-block !important;
+}
+
+.aplayer-info {
+    display: block !important;
 }
