@@ -14,14 +14,14 @@ const ap = new APlayer({
         {
             name: 'One Last Kiss',
             artist: '宇多田ヒカル',
-            url:  'https://cccimg.com/view.php/1edf91bfbc64b30508dde1bbbc116311.mp3',
+            url:  '/dist/Music/OneLastKiss.mp3',
             cover: 'https://s2.loli.net/2023/11/25/Sd9Aqs6O8uhYCj2.jpg',
             theme: '#ebd0c2' ,//切换到此音频时的主题色，比上面的 theme 优先级高
         },
         {
             name: 'Lemon',
             artist: '米津玄师',
-            url: 'https://cccimg.com/view.php/ac10dd5f17a986917a6f83112652350f.mp3',
+            url: '/dist/Music/Lemon.mp3',
             cover: 'https://s2.loli.net/2023/11/25/v9dUAaYXLRTh2S5.jpg',
             theme: '#FF0000' ,//切换到此音频时的主题色，比上面的 theme 优先级高
         },
