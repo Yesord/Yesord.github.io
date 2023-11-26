@@ -1,4 +1,4 @@
-body {
+body, li, div, ul {
     cursor:url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
           default;
   }
@@ -8,3 +8,7 @@ body {
           default;
   }
   
+  p, span, path, svg, b {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
+    default;
+  }
