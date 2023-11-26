@@ -1,3 +1,24 @@
+#App-Container .ob-avatar { /*找id为App-Container的对象下的class为ob-avatar的对象*/
+    transition: transform 2s cubic-bezier(0.3,1,0.8,0.5); 
+                                /* transition 属性是一个简写属性，用于设置四个过渡属性：
+                                1.transition-property 属性规定应用过渡的 CSS 属性的名称。
+                                2.transition-duration 属性规定完成过渡效果需要多少秒或毫秒。
+                                3.transition-timing-function 属性规定速度效果的速度曲线。
+                                4.transition-delay 属性规定过渡效果何时开始。
+                                */
+}
+
+#App-Container .ob-avatar:hover {
+    transform: rotate(360deg);
+
+}
+
+/* #App-Container .ob-avatar:not(:hover) {
+    animation-play-state:  ;
+} */
+
+
+
 #footer-link .footer-link-avatar{
     z-index: 3; /* z-index 属性设置元素的堆叠顺序。元素的堆叠顺序是指元素在层叠上下文中的垂直位置，z-index 值大的元素会覆盖 z-index 值小的元素。 */
      animation: spin 18s infinite linear, blink 5s infinite; /* 动画可以连携使用组合技 */
