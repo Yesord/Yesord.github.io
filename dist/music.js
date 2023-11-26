@@ -5,7 +5,7 @@ const ap = new APlayer({
     mini: false, // mini模式 
     fixed: true, // 吸底模式
     autoplay: false, // 自动播放
-    theme: '#FADFA3', // 主题色
+    theme: '#FF0000', // 主题色
     loop: 'all', // 音频循环播放, 可选值: 'all', 'one', 'none'
     order: 'random', // 音频循环顺序, 可选值: 'list', 'random'
     preload: 'auto',
@@ -20,7 +20,7 @@ const ap = new APlayer({
             artist: '宇多田ヒカル',
             url:  '/dist/Music/OneLastKiss.mp3',
             cover: '/dist/Cover/宇多田ヒカル - One Last Kiss.jpg',
-            theme: '#ebd0c2' ,//切换到此音频时的主题色，比上面的 theme 优先级高
+            theme: '#FF6E7F' ,//切换到此音频时的主题色，比上面的 theme 优先级高
             lrc: '/dist/lrc/translation/宇多田ヒカル - One Last Kiss.lrc',
         },
         {
@@ -28,7 +28,7 @@ const ap = new APlayer({
             artist: '米津玄師',
             url: '/dist/Music/Lemon.mp3',
             cover: '/dist/Cover/米津玄師 - Lemon.jpg',
-            theme: '#FF0000' ,//切换到此音频时的主题色，比上面的 theme 优先级高
+            theme: '#FF6E7F' ,//切换到此音频时的主题色，比上面的 theme 优先级高
             lrc: '/dist/lrc/translation/米津玄師 - Lemon.lrc',
         },
         {
@@ -36,7 +36,7 @@ const ap = new APlayer({
             artist: 'ヒグチアイ',
             url: '/dist/Music/悪魔の子.mp3',
             cover: '/dist/Cover/ヒグチアイ - 悪魔の子.jpg',
-            theme: '#FF0000' ,//切换到此音频时的主题色，比上面的 theme 优先级高
+            theme: '#FF6E7F' ,//切换到此音频时的主题色，比上面的 theme 优先级高
             lrc: '/dist/lrc/translation/ヒグチアイ - 悪魔の子 .lrc',
         },
         {
@@ -44,23 +44,31 @@ const ap = new APlayer({
             artist: '高橋洋子',
             url: '/dist/Music/残酷天使的行动纲领.mp3',
             cover: '/dist/Cover/高橋洋子 - 残酷な天使のテーゼ.jpg',
-            theme: '#FF0000' ,//切换到此音频时的主题色，比上面的 theme 优先级高
+            theme: '#FF6E7F' ,//切换到此音频时的主题色，比上面的 theme 优先级高
             lrc: '/dist/lrc/translation/高橋洋子 - 残酷な天使のテーゼ.lrc',
         },
         {
             name: '消えてしまいそうです ',
             artist: 'ずっと真夜中でいいのに。',
-            url: '/dist/Music/消えてしまいそうです .mp3',
-            cover: '/dist/Cover/ずっと真夜中でいいのに。 - 消えてしまいそうです .jpg',
-            theme: '#FF0000' ,//切换到此音频时的主题色，比上面的 theme 优先级高
+            url: '/dist/Music/消えてしまいそうです.mp3',
+            cover: '/dist/Cover/ずっと真夜中でいいのに。 - 消えてしまいそうです.jpg',
+            theme: '#FF6E7F' ,//切换到此音频时的主题色，比上面的 theme 优先级高
             lrc: '/dist/lrc/translation/ずっと真夜中でいいのに。 - 消えてしまいそうです .lrc',
+        },
+        {
+            name: 'すずめ feat.十明',
+            artist: 'RADWIMPS,十明',
+            url: '/dist/Music/すずめ feat.十明.mp3',
+            cover: '/dist/Cover/RADWIMPS,十明 - すずめ feat.十明.jpg',
+            theme: '#FF6E7F' ,//切换到此音频时的主题色，比上面的 theme 优先级高
+            lrc: '/dist/lrc/translation/RADWIMPS,十明 - すずめ feat.十明.lrc',
         },
         {
             name: '丑八怪',
             artist: '薛之谦',
             url: '/dist/Music/丑八怪.mp3',
             cover: '/dist/Cover/薛之谦 - 丑八怪.jpg',
-            theme: '#FF0000' ,//切换到此音频时的主题色，比上面的 theme 优先级高
+            theme: '#FF6E7F' ,//切换到此音频时的主题色，比上面的 theme 优先级高
             lrc: '/dist/lrc/origin/薛之谦 - 丑八怪.lrc',
         },
         {
@@ -68,7 +76,7 @@ const ap = new APlayer({
             artist: '薛之谦',
             url: '/dist/Music/天外来物.mp3',
             cover: '/dist/Cover/薛之谦 - 天外来物.jpg',
-            theme: '#FF0000' ,//切换到此音频时的主题色，比上面的 theme 优先级高
+            theme: '#FF6E7F' ,//切换到此音频时的主题色，比上面的 theme 优先级高
             lrc: '/dist/lrc/origin/薛之谦 - 天外来物.lrc',
         },
         {
@@ -76,7 +84,7 @@ const ap = new APlayer({
             artist: '薛之谦',
             url: '/dist/Music/我好像在哪见过你.mp3',
             cover: '/dist/Cover/薛之谦 - 我好像在哪见过你.jpg',
-            theme: '#FF0000' ,//切换到此音频时的主题色，比上面的 theme 优先级高
+            theme: '#FF6E7F' ,//切换到此音频时的主题色，比上面的 theme 优先级高
             lrc: '/dist/lrc/origin/薛之谦 - 我好像在哪见过你.lrc',
         },
         {
@@ -84,7 +92,7 @@ const ap = new APlayer({
             artist: 'Evan Call',
             url: '/dist/Music/Evan Call - One Last Message.mp3',
             cover: '/dist/Cover/PianoPrinceOfAnime - One Last Message (From _Violet Evergarden_).jpg',
-            theme: '#FF0000' ,//切换到此音频时的主题色，比上面的 theme 优先级高
+            theme: '#FF6E7F' ,//切换到此音频时的主题色，比上面的 theme 优先级高
             lrc: '',
         },
         {
@@ -92,7 +100,7 @@ const ap = new APlayer({
             artist: 'Evan Call',
             url: '/dist/Music/Evan Call - The Voice in My Heart.mp3',
             cover: '/dist/Cover/PianoPrinceOfAnime - One Last Message (From _Violet Evergarden_).jpg',
-            theme: '#FF0000' ,//切换到此音频时的主题色，比上面的 theme 优先级高
+            theme: '#FF6E7F' ,//切换到此音频时的主题色，比上面的 theme 优先级高
             lrc: '',
         },
         {
@@ -100,7 +108,7 @@ const ap = new APlayer({
             artist: 'Unknown',
             url: '/dist/Music/城南花已开.mp3',
             cover: '/dist/Cover/PianoPrinceOfAnime - One Last Message (From _Violet Evergarden_).jpg',
-            theme: '#FF0000' ,//切换到此音频时的主题色，比上面的 theme 优先级高
+            theme: '#FF6E7F' ,//切换到此音频时的主题色，比上面的 theme 优先级高
             lrc: '',
         },
         /*{
@@ -108,7 +116,7 @@ const ap = new APlayer({
             artist: '米津玄師,DAOKO',
             url: 'DAOKO (ダヲコ) _ 米津玄師 (よねづ けんし) - 打上花火.flac',
             cover: '/dist/Cover/RADWIMPS,十明 - すずめ feat.十明.jpg',
-            theme: '#FF0000' ,//切换到此音频时的主题色，比上面的 theme 优先级高
+            theme: '#FF6E7F' ,//切换到此音频时的主题色，比上面的 theme 优先级高
             lrc: '',
         },*/ 
         
