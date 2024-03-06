@@ -1,6 +1,6 @@
 <!doctype html> <!-- 文档类型 -->
 <html lang="en"> <!-- 语言 -->
-    <head><!-- hexo injector head_begin start --><meta name="description" content="010101110110111001"></meta><meta name="keywords" content="MCU, Blog"></meta><meta name="author" content="PIKO"></meta><!-- hexo injector head_begin end --><meta charset="utf-8"> <!-- 字符集 -->
+    <head><!-- hexo injector head_begin start --><meta name="description" content="010101110110111001"></meta><meta name="keywords" content="MCU, Blog"></meta><meta name="author" content="Yesord"></meta><!-- hexo injector head_begin end --><meta charset="utf-8"> <!-- 字符集 -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- IE浏览器兼容 -->
         <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- 移动端适配 -->
         <link rel="icon" href="/favicon.ico"><!-- 网站的初始图标 -->
