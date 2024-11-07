@@ -1,0 +1,64 @@
+#App-Container .ob-avatar { /*找id为App-Container的对象下的class为ob-avatar的对象*/
+    transition: transform 2s cubic-bezier(0.3,1,0.8,0.5); 
+                                /* transition 属性是一个简写属性，用于设置四个过渡属性：
+                                1.transition-property 属性规定应用过渡的 CSS 属性的名称。
+                                2.transition-duration 属性规定完成过渡效果需要多少秒或毫秒。
+                                3.transition-timing-function 属性规定速度效果的速度曲线。
+                                4.transition-delay 属性规定过渡效果何时开始。
+                                */
+}
+
+#App-Container .ob-avatar:hover {
+    transform: rotate(360deg);
+
+}
+
+/* #App-Container .ob-avatar:not(:hover) {
+    animation-play-state:  ;
+} */
+
+
+
+#footer-link .footer-link-avatar{
+    z-index: 3; /* z-index 属性设置元素的堆叠顺序。元素的堆叠顺序是指元素在层叠上下文中的垂直位置，z-index 值大的元素会覆盖 z-index 值小的元素。 */
+     animation: spin 18s infinite linear, blink 5s infinite; /* 动画可以连携使用组合技 */
+     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); 
+}
+
+#footer{
+    z-index: 2;
+    
+    }
+
+    /* 在浏览器的开发者工具上是可以找到这个对象的名字在其前面加个.就可以为这个对象写程序了 */
+    #footer .footer-avatar {
+        animation: spin 2s linear infinite forwards; /* 2s 为动画的周期 实现旋转*/
+        /*animation-duration: 2s;     /* 动画的周期 */
+        /*animation-name: spin;   /* 动画的名字 */
+        /*animation-iteration-count: infinite; /* 动画的次数 */
+        /*animation-fill-mode: forwards; /* 动画结束后保持最后的状态 */
+    }
+    
+    #footer .footer-avatar:hover { /* 鼠标悬停时动画启动 */
+        animation-play-state: running;
+    }
+    
+    #footer .footer-avatar:not(:hover) { /* 鼠标不悬停时动画暂停 */
+        animation-play-state: paused;
+    }
+    
+    
+/* 你可以创建一个新的 @keyframes 规则来描述闪烁动画，
+然后在 #footer .footer-avatar 的 CSS 规则中使用 animation 属性来应用这个动画。 */
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.25; }
+}
+

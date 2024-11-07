@@ -1,0 +1,14 @@
+#aplayer {
+    position: fixed; /* 或者 'fixed' */
+    left: 0px; /* 距离左边的距离 */
+    bottom: 0px; /* 距离底部的距离 */ 
+    z-index: 9999; /* 设置一个较大的值 */
+}
+
+.aplayer.aplayer-fixed .aplayer-body .aplayer-icon {
+    display: inline-block !important;
+}
+
+.aplayer-info {
+    display: block !important;
+}
