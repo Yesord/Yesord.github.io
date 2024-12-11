@@ -6,23 +6,52 @@
         <link rel="icon" href="/favicon.png"><!-- 网站的初始图标 -->
         <script type="module" crossorigin src="/static/js/14c27e7f.js"></script> <!-- 依赖 -->
         <link rel="stylesheet" href="/static/css/d5346b99.css">
-        
+        <style>
+            #sakana-widget {
+              position: fixed;
+              bottom: -25px; /* 距离底部20px */
+              right: 300px;  /* 距离右侧20px */
+              z-index: 1000; /* 确保在其他内容之上 */
+             }       
+        </style>
     <!-- hexo injector head_end start --><script rel="prefetch" async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script rel="preload" src="https://unpkg.com/blueimp-md5@^2.19.0/js/md5.min.js"></script><script rel="preload" src="https://unpkg.com/lodash@^4.17.21/lodash.min.js"></script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik"/><script rel="preload" src="https://unpkg.com/valine@^1.5.1/dist/Valine.min.js"></script><script rel="preload" src="https://unpkg.com/leancloud-storage@^4.15.0/dist/av-min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>  <!-- 主题css -->
         
-        <body id="body-container">
-            <link rel="stylesheet" href="/dist/APlayer.locate.css"> <!-- APlayer的位置css -->
-            <link rel="stylesheet" href="/static/css/mouse.css">
-            <link rel="stylesheet" href="/dist/APlayer.min.css"> <!-- APlayer的css -->
-            <div id="aplayer"></div> <!-- APlayer容器使用 -->
-            <script type="text/javascript" src="/dist/APlayer.min.js"></script> <!-- APlayer -->
-            <script type="text/javascript" src="/dist/music.js"></script> <!-- APlayer配置 -->
-            <script type="text/javascript" src="/static/js/ripple.js"></script> <!-- 点击水波纹 -->
-            <link rel="stylesheet" href="/static/css/app.css">
-            <script async src="/static/js/mouse.js"></script> <!-- 蜘蛛网显示 -->
-            <noscript><strong>We're sorry but this app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
-            <div id="app">
-            </div>
-            <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-            <script>LA.init({id:"3K8TNtkRfbY6ZTCK",ck:"3K8TNtkRfbY6ZTCK"})</script>
-            
-        <!-- hexo injector body_end start --><script src="https://fastly.jsdelivr.net/gh/Yesord/live2d-widget@latest/autoload.js"></script><!-- hexo injector body_end end --></body></script></html> 
+    <body id="body-container">
+        <link rel="stylesheet" href="/dist/APlayer.locate.css"> <!-- APlayer的位置css -->
+        <link rel="stylesheet" href="/static/css/mouse.css">
+        <link rel="stylesheet" href="/dist/APlayer.min.css"> <!-- APlayer的css -->
+        <div id="aplayer"></div> <!-- APlayer容器使用 -->
+        <script type="text/javascript" src="/dist/APlayer.min.js"></script> <!-- APlayer -->
+        <script type="text/javascript" src="/dist/music.js"></script> <!-- APlayer配置 -->
+        <script type="text/javascript" src="/static/js/ripple.js"></script> <!-- 点击水波纹 -->
+        <link rel="stylesheet" href="/static/css/app.css">
+        <script async src="/static/js/mouse.js"></script> <!-- 蜘蛛网显示 -->
+        <noscript><strong>We're sorry but this app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
+        <div id="app">
+        </div>
+        <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script>LA.init({id:"3K8TNtkRfbY6ZTCK",ck:"3K8TNtkRfbY6ZTCK"})</script>
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.css"
+        />
+            <div id="sakana-widget"></div>
+            <script>
+                function initSakanaWidget() {
+                    
+                    const takina = SakanaWidget.getCharacter('takina');
+                    takina.initialState = {
+                    ...takina.initialState,
+                    i: 0.01,
+                    d: 1,
+                    };
+                    SakanaWidget.registerCharacter('takina-slow', takina);
+                    new SakanaWidget({ character: 'takina-slow' }).mount('#sakana-widget');
+                }
+            </script>
+            <script
+                async
+                onload="initSakanaWidget()"
+                src="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.js"
+            ></script>
+    <!-- hexo injector body_end start --><script src="https://fastly.jsdelivr.net/gh/Yesord/live2d-widget@latest/autoload.js"></script><!-- hexo injector body_end end --></body></script></html> 
