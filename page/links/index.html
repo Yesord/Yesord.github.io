@@ -6,6 +6,7 @@
         <link rel="icon" href="/favicon.png"><!-- 网站的初始图标 -->
         <script type="module" crossorigin src="/static/js/14c27e7f.js"></script> <!-- 依赖 -->
         <link rel="stylesheet" href="/static/css/d5346b99.css">
+        <!-- travellings -->
         <style>
             #sakana-widget {
               position: fixed;
