@@ -7,6 +7,7 @@
         <script type="module" crossorigin src="/static/js/14c27e7f.js"></script> <!-- 依赖 -->
         <link rel="stylesheet" href="/static/css/d5346b99.css">
         <!-- travellings -->
+        <!-- https://www.travellings.cn/go.html -->
         <style>
             #sakana-widget {
               position: fixed;
