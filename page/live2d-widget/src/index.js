@@ -45,7 +45,7 @@
                     takina.initialState = {
                     ...takina.initialState,
                     i: 0.01,
-                    d: 1,
+                    d: 0.99,
                     };
                     SakanaWidget.registerCharacter('takina-slow', takina);
                     new SakanaWidget({ character: 'takina-slow' }).mount('#sakana-widget');
