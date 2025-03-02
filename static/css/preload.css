@@ -1,0 +1,158 @@
+html { 
+    background-color: #e7e7e2; 
+  }
+  
+  @keyframes type-01 {
+    0% {
+      border-top-width: 0;
+      border-right-width: 64px;
+      border-bottom-width: 64px;
+      border-left-width: 0;
+    }
+  
+    40% {
+      border-top-width: 0;
+      border-right-width: 64px;
+      border-bottom-width: 64px;
+      border-left-width: 0;
+    }
+  
+    45% {
+      border-top-width: 64px;
+      border-right-width: 64px;
+      border-bottom-width: 64px;
+      border-left-width: 0;
+    }
+  
+    100% {
+      border-top-width: 64px;
+      border-right-width: 64px;
+      border-bottom-width: 64px;
+      border-left-width: 0;
+    }
+  }
+  
+  @keyframes type-02 {
+    0% {
+      border-top-width: 0;
+      border-right-width: 50px;
+      border-bottom-width: 50px;
+      border-left-width: 50px;
+    }
+  
+    40% {
+      border-top-width: 0;
+      border-right-width: 46px;
+      border-bottom-width: 46px;
+      border-left-width: 46px;
+    }
+  
+    45% {
+      border-top-width: 46px;
+      border-right-width: 46px;
+      border-bottom-width: 46px;
+      border-left-width: 46px;
+    }
+  
+    100% {
+      border-top-width: 46px;
+      border-right-width: 46px;
+      border-bottom-width: 46px;
+      border-left-width: 46px;
+    }
+  }
+  
+  @keyframes type-03 {
+    0% {
+      border-top-width: 0;
+      border-right-width: 0;
+      border-bottom-width: 64px;
+      border-left-width: 64px;
+    }
+  
+    40% {
+      border-top-width: 0;
+      border-right-width: 0;
+      border-bottom-width: 64px;
+      border-left-width: 64px;
+    }
+  
+    45% {
+      border-top-width: 64px;
+      border-right-width: 0;
+      border-bottom-width: 64px;
+      border-left-width: 64px;
+    }
+  
+    100% {
+      border-top-width: 64px;
+      border-right-width: 0;
+      border-bottom-width: 64px;
+      border-left-width: 64px;
+    }
+  }
+  
+  .polygon-loader { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -96px 0 0 -64px;
+    height: 192px;
+    width: 128px;
+  }
+  
+  .polygon-loader div {
+    position: absolute;
+    top: 64px;
+    left: 64px;
+    border: 0 solid transparent;
+    transform-origin: left top;
+    animation-duration: .52s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: steps(4);
+  }
+  
+  .polygon-loader div:nth-of-type(1) {
+    border-top-color: #210008;
+    transform: rotate(-180deg);
+    animation-name: type-01;
+  }
+  
+  .polygon-loader div:nth-of-type(2) {
+    border-top-color: #520019;
+    transform: rotate(-90deg);
+    animation-name: type-01;
+    animation-delay: .08s;
+  }
+  
+  .polygon-loader div:nth-of-type(3) {
+    border-top-color: #7b0029;
+    transform: rotate(0);
+    animation-name: type-01;
+    animation-delay: .12s;
+  }
+  
+  .polygon-loader div:nth-of-type(4) {
+    border-top-color: #a5003a;
+    transform: rotate(90deg);
+    animation-name: type-01;
+    animation-delay: .16s;
+  }
+  
+  .polygon-loader div:nth-of-type(5) {
+    left: 0;
+    border-top-color: #d6004a;
+    transform: rotate(45deg);
+    animation-name: type-02;
+    animation-delay: .24s;
+  }
+  
+  .polygon-loader div:nth-of-type(6) {
+    top: 128px;
+    left: 0;
+    border-top-color: #ff0052;
+    transform: rotate(0);
+    animation-name: type-03;
+    animation-delay: .28s;
+  }
