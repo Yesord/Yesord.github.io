@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return new Promise((resolve) => {
             setTimeout(() => {
                 resolve();
-            }, 1000); // Simulate a 3-second loading time
+            }, 900); // Simulate a 3-second loading time
         });
     }
 
