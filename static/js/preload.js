@@ -28,8 +28,43 @@ document.addEventListener("DOMContentLoaded", function() {
     function loadResources() {
         return new Promise((resolve) => {
             setTimeout(() => {
+                // Load SakanaWidget script
+                const sakanaScript = document.createElement('script');
+                sakanaScript.src = 'https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.js';
+                sakanaScript.onload = () => {
+                    // Initialize SakanaWidget
+                    const takina = SakanaWidget.getCharacter('takina');
+                    takina.initialState = {
+                        ...takina.initialState,
+                        i: 0.01,
+                        d: 0.98,
+                    };
+                    SakanaWidget.registerCharacter('takina-slow', takina);
+                    new SakanaWidget({ character: 'takina-slow' }).mount('#sakana-widget');
+                };
+                document.body.appendChild(sakanaScript);
+
+                // Load Live2D Widget script
+                const live2dScript = document.createElement('script');
+                live2dScript.src = 'https://fastly.jsdelivr.net/gh/Yesord/live2d-widget@latest/autoload.js';
+                document.body.appendChild(live2dScript);
+
+                // Load additional scripts
+                const scripts = [
+                    '/dist/APlayer.min.js',
+                    '/dist/music.js',
+                    '/static/js/ripple.js',
+                    '/static/js/mouse.js'
+                ];
+
+                scripts.forEach(src => {
+                    const script = document.createElement('script');
+                    script.src = src;
+                    document.body.appendChild(script);
+                });
+
                 resolve();
-            }, 3000); // Simulate a 3-second loading time
+            }, 2000); // Simulate a 3-second loading time
         });
     }
 
@@ -44,42 +79,5 @@ document.addEventListener("DOMContentLoaded", function() {
         if (mainContent) {
             mainContent.style.display = 'block';
         }
-
-        // Initialize SakanaWidget
-        function initSakanaWidget() {
-            const takina = SakanaWidget.getCharacter('takina');
-            takina.initialState = {
-                ...takina.initialState,
-                i: 0.01,
-                d: 0.98,
-            };
-            SakanaWidget.registerCharacter('takina-slow', takina);
-            new SakanaWidget({ character: 'takina-slow' }).mount('#sakana-widget');
-        }
-
-        // Load SakanaWidget script
-        const sakanaScript = document.createElement('script');
-        sakanaScript.src = 'https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.js';
-        sakanaScript.onload = initSakanaWidget;
-        document.body.appendChild(sakanaScript);
-
-        // Load Live2D Widget script
-        const live2dScript = document.createElement('script');
-        live2dScript.src = 'https://fastly.jsdelivr.net/gh/Yesord/live2d-widget@latest/autoload.js';
-        document.body.appendChild(live2dScript);
-
-        // Load additional scripts
-        const scripts = [
-            '/dist/APlayer.min.js',
-            '/dist/music.js',
-            '/static/js/ripple.js',
-            '/static/js/mouse.js'
-        ];
-
-        scripts.forEach(src => {
-            const script = document.createElement('script');
-            script.src = src;
-            document.body.appendChild(script);
-        });
     });
 });
