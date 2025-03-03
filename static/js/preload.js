@@ -60,7 +60,7 @@
                     scripts.forEach(src => {
                         const script = document.createElement('script');
                         script.src = src;
-                        document.body.appendChild(script);
+                        document.getElementById('app').appendChild(script);
                     });
 
                     resolve();
