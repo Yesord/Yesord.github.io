@@ -30,7 +30,7 @@
     <body id="body-container">
         <!-- <div id="aplayer"></div> APlayer容器使用 -->
         <noscript><strong>We're sorry but this app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
-        <div id="app" style="display: block;">
+        <div id="app">
             <!-- <script type="text/javascript" src="./dist/APlayer.min.js"></script>  -->
             <!-- APlayer -->
             <!-- <script type="text/javascript" src="./dist/music.js"></script>  -->
